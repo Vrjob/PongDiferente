@@ -1,0 +1,24 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Define a altura do body para ocupar toda a altura da janela */
+  margin: 0; /* Remove as margens padrão do body para evitar espaços extras */
+  background: linear-gradient(to top,  #4A9E53 , #3BADBE); /* Gradiente da cor azul para a cor vermelha */
+  background-size: 100% 200%; /* Tamanho do gradiente, 200% para cobrir a transição completa */
+  animation: backgroundTransition 2s infinite alternate; /* Animar a transição a cada 5 segundos */
+
+}
+canvas {
+  display: block;
+  
+}
+
+@keyframes backgroundTransition {
+  from {
+    background-position: top; /* Início do gradiente à esquerda */
+  }
+  to {
+    background-position: bottom; /* Fim do gradiente à direita */
+  }
+}
